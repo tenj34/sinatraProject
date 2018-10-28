@@ -9,13 +9,6 @@
     <div class="container">
       <h4 class = "welcome_heading">Welcome to Food Star!</h4>
       <% if logged_in? %>
-        <h4 class = "welcome_heading">Welcome to Food Star!</h4>
-        <ul>
-          <li><a href ='/reviews'> Home</a></li>
-          <li><a href = '/users/<%=current_user.slug%'> Your Reviews </a></li>
-          <li><a href = '/reviews/new'> Write Review! </a></li>
-          <li><a href='/logout'>Logout</a></li>
-        </ul>
         <h1> You are seeing this if you are logged in correctly </h1>
       <% else %>
         <%=yield%>
